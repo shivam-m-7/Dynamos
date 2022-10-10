@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg{
+    min-height: 100vh;
+    padding: 2rem 0;
+    background-repeat: no-repeat;
+    background-image: url(https://sso.masaischool.com/screenbg.svg),url(https://sso.masaischool.com/screenbg-bottom.svg);
+    background-size: 50%,50%;
+    background-position: 0 0,100% 100%;
+}
+
+.bg > .cardContainer{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 25rem;
+    padding: 4rem 3rem;
+    padding-top: 0;
+    background-color: #48c9b0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cardContainer > h1{
+    font-weight: 300;
+    color: white;
+    margin: 3rem 0;
+}
+
+.cardContainer > .inputGroup{
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1.5rem; 
+}
+
+.inputGroup > input{
+    padding: 0.8rem 0.3rem;
+    border: none;
+    outline: none
+}
+
+.termsCondition{
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+form > p{
+    color: grey;
+}
+
+form > p > span{
+    color: blue;
+    cursor: pointer;
+}
+
+.cardContainer > input[type=submit]{
+    margin-bottom: 0.8rem;
+}
+
+.cardContainer > input[type=submit], .cardContainer > input[type=button]{
+    width: 100%;
+    padding: 0.8rem 0;
+    font-size: medium;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: #17a589;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.cardContainer > input + p, .buttonContainer + p{
+    font-size: 1.2rem;
+}
+
+.buttonContainer{
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 8rem;
+}
+
+
+    </style>   
+</head>
+<body>
+    <div class="bg">
+        
+        <form id="signupForm" class="cardContainer flex">
+            <h1>- Visitor -</h1>
+            <div class="inputGroup flex">
+                <input type="email" id="email" placeholder="Full Name" required>
+            </div>
+            <div class="inputGroup flex">
+                <input type="tel" id="phn" placeholder="Email" required>
+            </div>
+            <div class="inputGroup flex">
+                <input type="password" id="pwd" placeholder="Organization" required>
+            </div>
+            <input type="submit" value="SIGN UP">
+            <input type="button" value="RETURN">
+
+        </form>
+        
+        <footer>
+
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

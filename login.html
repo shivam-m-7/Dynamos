@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            background: rgb(69,137,211);
+            background: linear-gradient(162deg, rgba(69,137,211,1) 25%, rgba(125,84,181,1) 75%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cardContainer{
+            display: flex;
+            flex-direction: column;
+            max-width: 20rem;
+            width: 95%;
+            padding: 4rem 2rem;
+            margin: auto;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .cardContainer > *{
+            margin-bottom: 1.5rem;
+            height: 3rem;
+        }
+
+        .cardContainer > input{
+            border: none;
+            outline: none;
+            border-bottom: 2px solid grey;
+            padding-left: 0.5rem ;
+        }
+
+        .cardContainer > input[type=submit]{
+            background: linear-gradient(162deg, rgba(69,137,211,1) 25%, rgba(125,84,181,1) 75%);
+            color: white;
+            cursor: pointer;
+            margin: 1rem 0;
+        }
+
+        .cardContainer > p{
+            height: auto;
+            color: grey;
+            font-size: small;
+            padding: 0.4rem 0;
+            margin-bottom: 0;
+        }
+
+        p > span{
+            color: #206393;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="cardContainer">
+        <h1>Login</h1>
+        <input type="text" name="email" id="email" placeholder="Email">
+        <input type="text" name="pwd" id="password" placeholder="Password">
+        <input type="submit" value="Login">
+        <p>Forgot <span>Password</span>?</p>
+        <p>Don't hava an account? <span>Sign up</span></p>
+    </div>
+</body>
+</html>
